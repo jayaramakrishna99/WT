@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Shapes</title>
+    <link rel="shortcut icon" href="../favicon (1).ico">
+    <style>
+        canvas {
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Filled Circle</h2>
+    <canvas id="filledCircleCanvas" width="400" height="100"></canvas>
+
+    <h2>Unfilled Circle</h2>
+    <canvas id="unfilledCircleCanvas" width="400" height="100"></canvas>
+
+    <h2>Filled Rectangle</h2>
+    <canvas id="filledRectangleCanvas" width="400" height="100"></canvas>
+
+    <h2>Unfilled Rectangle</h2>
+    <canvas id="unfilledRectangleCanvas" width="400" height="100"></canvas>
+
+    <script>
+
+        const filledCircleCanvas = document.getElementById('filledCircleCanvas');
+        const unfilledCircleCanvas = document.getElementById('unfilledCircleCanvas');
+        const filledRectangleCanvas = document.getElementById('filledRectangleCanvas');
+        const unfilledRectangleCanvas = document.getElementById('unfilledRectangleCanvas');
+
+        const filledCircleContext = filledCircleCanvas.getContext('2d');
+        const unfilledCircleContext = unfilledCircleCanvas.getContext('2d');
+        const filledRectangleContext = filledRectangleCanvas.getContext('2d');
+        const unfilledRectangleContext = unfilledRectangleCanvas.getContext('2d');
+
+        filledCircleContext.beginPath();
+        filledCircleContext.arc(200, 50, 30, 0, Math.PI * 2);
+        filledCircleContext.fillStyle = 'yellow';
+        filledCircleContext.fill();
+        filledCircleContext.closePath();
+
+        unfilledCircleContext.beginPath();
+        unfilledCircleContext.arc(200, 50, 30, 0, Math.PI * 2);
+
+        unfilledCircleContext.lineWidth = 3;
+        unfilledCircleContext.stroke();
+        unfilledCircleContext.closePath();
+
+        filledRectangleContext.fillStyle = 'red';
+        filledRectangleContext.fillRect(100,10,200,80);
+
+        unfilledRectangleContext.lineWidth = 3;
+        unfilledRectangleContext.strokeRect(100,10,200,80);
+    </script>
+</body>
+</html>

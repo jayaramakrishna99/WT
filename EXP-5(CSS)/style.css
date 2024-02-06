@@ -1,0 +1,9 @@
+input{
+    margin-top: 5%;
+    margin-left: 45%;
+    width: 85px;
+}
+input:hover{
+    background-color: red;
+    color: white;
+}

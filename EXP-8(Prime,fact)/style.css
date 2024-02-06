@@ -1,0 +1,28 @@
+h1{
+    background-color:brown;
+    color: aliceblue;
+}
+body{
+    background-color: azure;
+}
+button{
+    background-color:antiquewhite;
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+        
+    border-collapse:collapse;
+}
+button:hover{
+    background-color: aquamarine;
+}
+#result{
+    padding: 25px 0px 0px 20px;
+    margin:50px 0px 0px 450px;
+    height: 50px;
+    width: 400px;
+    background-color: bisque;
+}
+.number{
+    margin: 50px 0px 50px 450px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../favicon (1).ico">
+</head>
+<body>    
+    <h1 align="center">Try these!</h1>
+    <div class="number">
+        <label for="">Enter a Number:</label>
+        <input type="number" id="number">
+    </div>
+    <div align="center">
+        <button onclick="prime()">Prime</button>
+        <!-- <button onclick="">Palindrome</button> -->
+        <button onclick="fact()">Factorial</button>
+        <button onclick="fibnocci()">Fibonacci</button>
+        <button onclick="palindrome()">Palindrome</button>
+    </div>
+    <div id="result"></div>
+    <script>
+        function enter(){
+            let num=parseInt(prompt("Enter a Number"))
+            
+            return num
+        }
+        // let num=enter()
+        function prime(){
+            let num=document.getElementById("number").value;
+            let isPrime = true;
+
+            if (num <= 1) {
+                isPrime = false;
+            } else {
+                for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+                }
+            }
+            if(isPrime === true){
+                displayResult(num+" is a prime.")
+            }
+            else{
+                displayResult(num+" is not a prime.")
+            }
+
+            }
+            function displayResult(message) {
+                      document.getElementById("result").innerHTML = message;
+            }
+            function fact(){
+                let num1=document.getElementById("number").value;
+                product=1
+                for(let i=num1;i>1;i--){
+                    product*=i
+
+                }
+                displayResult("Factorial of "+num1+" is : "+product)
+            }
+
+            function fibnocci() {
+            let num=document.getElementById("number").value;
+            let fibonacciArray = [0, 1];
+
+            for (let i = 2; i < num; i++) {
+            fibonacciArray[i] = fibonacciArray[i - 1] + fibonacciArray[i - 2];
+            }
+
+            displayResult("Fibonacci sequence: "+fibonacciArray.join(', '));
+            }
+
+            function palindrome(){ 
+                let num=document.getElementById("number").value;
+                let rev=parseInt(num.toString().split('').reverse().join(''));
+                if (num==rev){
+                    displayResult(num+" is a Palindrome")
+                }
+                else{
+                    displayResult(num+" is not a Palindrome")
+                }
+            }
+
+    </script>
+    </script>
+
+</body>
+</html>
