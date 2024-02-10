@@ -1,0 +1,17 @@
+div{
+    margin-top: 200px;
+    margin-left: 500px;
+}
+.submit{
+    margin-left: 10%;
+    background-color:brown;
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+}
+body{
+    background-color: aliceblue;
+}
+.in{
+    margin-bottom: 10px;
+}
