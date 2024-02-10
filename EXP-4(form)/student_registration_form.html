@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentRegistartionForm</title>
+    <link rel="shortcut icon" href="../favicon (1).ico">
+</head>
+<body>
+    <h1 style="text-align: center; background-color: aliceblue;">STUDENT REGISTRATION FOR   M</h1><hr>
+    
+    <form action="" style=" background-color: rgb(220, 255, 223); font-size: large; margin-left: 200px; margin-right: 200px;">
+        <div style="margin-left: 50px;">
+            <br><label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="" placeholder="enter your name"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"><br><br>
+
+            <label for="confirm-password">Renter-Password:</label>
+            <input type="password" name="confirm-password" id="confirm-password"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="jrk@gmail.com"><br><br>
+
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="dob" id="dob"><br><br>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="typeofid">Select The Type Of Id Proff:</label>
+            <select name="typeofid" id="typeofid">
+                <option value="adharcard">Aadhar-card</option>
+                <option value="pan">Pan-card</option>
+                <option value="voterid">Voter-id</option>
+                <option value="driving-license">Driving-License</option>
+            </select> <br><br>
+
+            <label for="idproof">Upload Your Id Proof:</label>
+            <input type="file" name="idproof" id="idproof">
+
+            <p>YEAR:
+                <input type="radio" name="year" id="one" value="one">
+                <label for="year">I</label>
+                <input type="radio" name="year" id="two" value="two">
+                <label for="year">II</label>
+                <input type="radio" name="year" id="three" value="three">
+                <label for="year">III</label>
+                <input type="radio" name="year" id="four" value="four">
+                <label for="year">IV</label>
+            </p>
+
+            <p>What Would You Like To Play:
+                <input type="checkbox" name="cricket" id="1" value="cricket">
+                <label for="cricket">Cricket</label>
+                <input type="checkbox" name="basketball" id="2" value="basketball">
+                <label for="basketball">Basketball</label>
+                <input type="checkbox" name="football" id="3" value="football">
+                <label for="football">Football</label>
+                <input type="checkbox" name="throwball" id="4" value="throwball">
+                <label for="throwball">Throwball</label>
+            </p>
+
+            <label for="language">Your Mother Toungue:</label>
+            <select>
+                <option value="telugu">Telugu</option>
+                <option value="hindi">Hindi</option>
+                <option value="urdu">Urdu</option>
+                <option value="english">English</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="feedback">Please Feel Free To Leave A Comment If You Have Any Concern:</label><br>
+            <textarea name="feedback" id="feedback" cols="60" rows="5"></textarea><br><br>
+
+            <button type="reset">RESET</button>
+
+            <button type="submit">REGISTER</button>
+
+        </div>
+        
+        
+    </form>
+</body>
+</html>
