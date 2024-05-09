@@ -1,0 +1,17 @@
+body{
+    padding: 50px;
+}
+.container{
+    max-width: 600px;
+    margin:0 auto;
+    padding: 50px;
+}
+#formcss{
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.submitbtn{
+    background-color:gold;
+    color: white;
+    margin-left: 50px;
+}
